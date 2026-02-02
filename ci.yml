@@ -18,9 +18,9 @@ jobs:
     steps:
       - |
         set -euo pipefail
-        if [[ -n "${DEFAULT_CA_PATH:-}" ]]; then
-          export NODE_EXTRA_CA_CERTS="${NODE_EXTRA_CA_CERTS:-$DEFAULT_CA_PATH}"
-          export SSL_CERT_FILE="${SSL_CERT_FILE:-$DEFAULT_CA_PATH}"
+        if [[ -n "${EXTERNAL_CONNECTIONS_CA_PATH:-}" ]]; then
+          export NODE_EXTRA_CA_CERTS="${NODE_EXTRA_CA_CERTS:-$EXTERNAL_CONNECTIONS_CA_PATH}"
+          export SSL_CERT_FILE="${SSL_CERT_FILE:-$EXTERNAL_CONNECTIONS_CA_PATH}"
         fi
 
         if [[ -n "${JEMMA_TAG:-}" ]]; then

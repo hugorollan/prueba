@@ -22,13 +22,14 @@ function getMetaTagContent(tagName: string): string {
 const foundryUrl = getMetaTagContent("osdk-foundryUrl");
 const clientId = getMetaTagContent("osdk-clientId");
 const redirectUrl = getMetaTagContent("osdk-redirectUrl");
-const ontologyRid = getMetaTagContent("osdk-ontologyRid");
 
 const scopes = [
   "api:use-ontologies-read",
   "api:use-ontologies-write",
   "api:use-mediasets-read",
   "api:use-mediasets-write",
+  "api:use-datasets-read",
+  "api:compass-read", // Added to ensure dataset RID resolution works
 ];
 
 export const auth: PublicOauthClient = createPublicOauthClient(
@@ -39,8 +40,8 @@ export const auth: PublicOauthClient = createPublicOauthClient(
 );
 
 /**
- * Initialize the client to interact with the Ontology and Platform SDKs
+ * Initialize the client to interact with the Platform SDK
  */
-export const client: Client = createClient(foundryUrl, ontologyRid, auth);
+export const client: Client = createClient(foundryUrl, "ri.ontology.main.ontology.122b5e19-6632-4dd9-acb1-4a41f4571048", auth);
 
 export default client;

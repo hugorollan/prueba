@@ -1,12 +1,11 @@
-import { OsdkProvider } from "@osdk/react";
-import ReactDOM from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import "./index.css";
-import client from "./client";
-import { router } from "./router";
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import { RouterProvider } from 'react-router-dom'
+import { router } from './router.tsx'
+import './index.css'
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
-  <OsdkProvider client={client}>
+createRoot(document.getElementById('root')!).render(
+  <StrictMode>
     <RouterProvider router={router} />
-  </OsdkProvider>,
-);
+  </StrictMode>,
+)

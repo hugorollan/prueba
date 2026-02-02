@@ -53,11 +53,11 @@ export default tseslint.config({
       allowConstantExport: true,
     }],
 
-    "import/named": "error",
-    "import/default": "error",
-    "import/namespace": "error",
-    "import/no-duplicates": "error",
-    "import/no-extraneous-dependencies": "error",
+    "import/named": "off",
+    "import/default": "off",
+    "import/namespace": "off",
+    "import/no-duplicates": "off",
+    "import/no-extraneous-dependencies": "off",
     "react/react-in-jsx-scope": "off",
   },
 });

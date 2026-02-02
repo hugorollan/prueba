@@ -1,6 +1,6 @@
-# prototipometricasvalencia-application
+# app-anlisis-pii-psi
 
-This project was generated with [`@osdk/create-app`](https://www.npmjs.com/package/@osdk/create-app) and demonstrates using the Ontology SDK package `@prototipometricasvalencia-application/sdk` with React on top of Vite. Check out the [Vite](https://vitejs.dev/guide/) docs for further configuration.
+This project was generated with [`@osdk/create-app`](https://www.npmjs.com/package/@osdk/create-app) and demonstrates using the Platform SDK with React on top of Vite. Check out the [Vite](https://vitejs.dev/guide/) docs for further configuration.
 
 ## Developing locally
 

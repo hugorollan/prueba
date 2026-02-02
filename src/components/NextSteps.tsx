@@ -1,10 +1,23 @@
 import cloud from "/cloud.svg";
+import cube from "/cube.svg";
 import tag from "/tag.svg";
 
 import React from "react";
 import css from "./NextSteps.module.css";
 
 const STEPS: INextStep[] = [
+  {
+    icon: cube,
+    title: "Configure your Ontology and Platform SDKs",
+    subtitle: (
+      <span>
+        Use the Ontology SDK to interact with your Ontology and the Platform SDK
+        to access Foundry APIs. Configure your SDKs from the{" "}
+        <strong>Ontology SDK</strong> and <strong>Platform SDK</strong> tabs in
+        Developer Console.
+      </span>
+    ),
+  },
   {
     icon: cloud,
     title: "Request a subdomain to host your application with Foundry",

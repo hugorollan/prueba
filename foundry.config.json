@@ -1,7 +1,7 @@
 {
   "foundryUrl": "https://eysa.palantirfoundry.com",
   "site": {
-    "application": "ri.third-party-applications.main.application.4ca218fd-19ee-4ac0-a086-745b65ecee14",
+    "application": "ri.third-party-applications.main.application.19cd33c0-5e30-41f8-9c44-69e372825c4b",
     "directory": "./dist",
     "autoVersion": {
       "type": "git-describe",
