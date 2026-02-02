@@ -1,0 +1,12 @@
+{
+  "foundryUrl": "https://eysa.palantirfoundry.com",
+  "site": {
+    "application": "ri.third-party-applications.main.application.4ca218fd-19ee-4ac0-a086-745b65ecee14",
+    "directory": "./dist",
+    "autoVersion": {
+      "type": "git-describe",
+      "tagPrefix": ""
+    },
+    "uploadOnly": false
+  }
+}
