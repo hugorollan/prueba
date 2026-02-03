@@ -47,8 +47,8 @@ export function AnalisisAutomatico({ onResultado }: Props) {
       const functionRid = 'ri.function-registry.main.function.ede5758f-d860-40ab-bee0-0208088e6510';
       const foundryUrl = document.querySelector('meta[name="osdk-foundryUrl"]')?.getAttribute('content') || window.location.origin;
       
-      // Usar el endpoint correcto de Foundry Functions API
-      const apiUrl = `${foundryUrl}/api/v2/functions/${functionRid}/execute`;
+      // CORRECCIÓN APLICADA: Añadido ?preview=true al final
+      const apiUrl = `${foundryUrl}/api/v2/functions/${functionRid}/execute?preview=true`;
       
       addDebugInfo(`📍 URL: ${apiUrl}`);
       addDebugInfo(`📦 Parámetros: { dataset_rid: "${datasetRid}" }`);
@@ -93,7 +93,8 @@ export function AnalisisAutomatico({ onResultado }: Props) {
     
     try {
       const functionRid = 'ri.function-registry.main.function.ede5758f-d860-40ab-bee0-0208088e6510';
-      const apiUrl = `${window.location.origin}/api/v2/functions/${functionRid}/execute`;
+      // CORRECCIÓN APLICADA: También aquí por si acaso se usa el fallback
+      const apiUrl = `${window.location.origin}/api/v2/functions/${functionRid}/execute?preview=true`;
       
       addDebugInfo(`📍 URL: ${apiUrl}`);
       
